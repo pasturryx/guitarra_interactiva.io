@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mástil de Guitarra Interactivo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="controls">
+    <button id="toggleMarking">Marcar Notas</button>
+    <button id="clearMarkers">Limpiar</button>
+  </div>
+  <div class="settings">
+    <label>
+      <input type="checkbox" id="englishNotation" checked> Notación Inglesa (A, B, C, D, E, F, G)
+    </label>
+    <label>
+      <input type="checkbox" id="spanishNotation"> Notación en Español (La, Si, Do, Re, Mi, Fa, Sol)
+    </label>
+    <label>
+      <input type="checkbox" id="multiSelect"> Seleccionar más de una nota
+    </label>
+  </div>
+  <div class="notes-reference" id="notesReference"></div>
+  <div class="fretboard-container">
+    <div class="fretboard" id="fretboard"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
